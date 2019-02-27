@@ -1,5 +1,5 @@
-# unity-global-variable-with-scriptable-object
-Based on the "Three pillars of smart game engineering" : https://unity3d.com/how-to/architect-with-scriptable-objects
+# Unity Global Variable with Scriptable Object
+Based on the talk : "Game Architecture with Scriptable Objects" https://www.youtube.com/watch?v=raQ3iHhE_Kk
 
 ## Available variable
 
