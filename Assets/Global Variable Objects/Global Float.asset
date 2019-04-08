@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Global Float
   m_EditorClassIdentifier: 
   _initialValue: 5
+  _saveDuringPlayMode: 0

@@ -8,6 +8,9 @@ namespace Utils.GlobalVariable
         [SerializeField] private T _initialValue;
         [NonSerialized] private T _runtimeValue;
 
+        [Header("Editor only")] 
+        [SerializeField] private bool _saveDuringPlayMode = false;
+
         public T Value {
             get { return _runtimeValue; }
             set
@@ -24,8 +27,9 @@ namespace Utils.GlobalVariable
         public event ValueAction OnValueChanged;
 
         public void OnBeforeSerialize()
-        {
-            
+        {        
+            if (_saveDuringPlayMode)
+                _initialValue = Value;
         }
 
         public void OnAfterDeserialize()
